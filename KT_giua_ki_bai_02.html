@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng của các số lẻ trong mảng</title>
+</head>
+<body>
+<script>
+    function sumOfOdd(array) {
+        let a=0;
+        for (let i=0; i<array.length; i++) {
+            if (array[i] % 2 !== 0) {
+                a += array[i];
+                console.log(a);
+            }
+        } return a;
+    }
+
+    let array1= new Array(3,5,5,7,8,9,0);
+    let array2= new Array(45,6,76,89,5,44,43,332,34);
+
+    console.log(sumOfOdd(array1));
+    console.log(sumOfOdd(array2));
+</script>
+</body>
+</html>

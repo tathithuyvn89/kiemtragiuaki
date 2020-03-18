@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi dựa vào năm sinh</title>
+</head>
+<body>
+<script>
+    var today= new Date();
+    var a= today.getFullYear();
+
+    function getYearOlds(number) {
+         yearolds = a - number;
+        return yearolds;
+    }
+let b= Number(prompt("Xin mời nhập vào năm sinh của bạn :"));
+    if (b>a){
+        alert("Xin hãy nhập lại")
+    } else {
+    alert("Tuổi của bạn là : "+ getYearOlds(b));
+    }
+</script>
+</body>
+</html>
